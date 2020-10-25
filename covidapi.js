@@ -9,7 +9,7 @@ function getState(){
 };
 
 function getStats(){
-    $.getJSON(getState();,function(data){
+    $.getJSON(getState(),function(data){
         let positive = data[0].positive;
         $(".positive").text("Number of Positive Cases:  " + positive);
         let negative = data[0].negative;
