@@ -65,3 +65,11 @@ p {
 	padding: 10px;
 	text-align: center;
 }
+
+iframe {
+	width: 800px;
+	height: 400px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
