@@ -1,10 +1,10 @@
 function getState(){
-    var stateCode = document.getElementById("stateCode");
+    var stateCode = document.getElementById("stateCode").defaultValue = 'us';
     if (stateCode = 'us') {
         return "https://api.covidtracking.com/v1/" + stateCode + "/daily.json";
     }
     else {
-        return "https://api.covidtracking.com/v1/states" + stateCode + "/daily.json";
+        return "https://api.covidtracking.com/v1/states/" + stateCode + "/daily.json";
     }
 };
 
