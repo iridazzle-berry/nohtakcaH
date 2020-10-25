@@ -28,6 +28,7 @@ header {
 }
 
 .tabcontent {
+	padding: 100px;
 	display: none;
 }
 
