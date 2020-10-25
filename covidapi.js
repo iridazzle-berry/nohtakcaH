@@ -1,15 +1,17 @@
+/*
 function getState(){
     var stateCode = document.getElementById("stateCode");
     if (stateCode == 'us') {
-        return "https://api.covidtracking.com/v1/" + stateCode + "/daily.json";
+        return "https://api.covidtracking.com/v1/us/daily.json";
     };
     else {
         return "https://api.covidtracking.com/v1/states/" + stateCode + "/daily.json";
     };
 };
+*/
 
-function getStats(){
-    $.getJSON(getState(),function(data){
+//function getStats(){
+    $.getJSON("https://api.covidtracking.com/v1/us/daily.json",function(data){
         let positive = data[0].positive;
         $(".positive").text("Number of Positive Cases:  " + positive);
         let negative = data[0].negative;
@@ -23,4 +25,4 @@ function getStats(){
         let recovered = data[0].recovered;
         $(".recovered").text("Recovered: " + recovered);
     });
-};
+//};
