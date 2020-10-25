@@ -3,8 +3,6 @@ $.getJSON("https://api.covidtracking.com/v1/us/daily.json",function getPositive(
     $(".positive").append(positive);
     let negative = data[0].negative;
     $(".negative").append(negative);
-    let pending = data[0].pending;
-    $(".pending").append(pending);
     let death = data[0].death;
     $(".death").append(death);
     let deathIncrease = data[0].deathIncrease;
