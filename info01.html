@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			let date = document.getElementById("date");
+			let death = document.getElementById("death");
+			let deathIncrease = document.getElementById("deathIncrease");
+			let hospitalized = document.getElementById("hospitalized");
+			let recovered = document.getElementById("recovered");
+			let onVentilatorCurrently = document.getElementById("onVentilatorCurrently");
+			let us_table = document.getElementById('us_stat');
+
+			fetch('https://api.covidtracking.com/v1/us/current.json',
+			{'method':'GET'}
+			)
+			.then(response => response.json().then( data => {
+				console.log(data);
+				date.innerHTML = data.date;
+				death.innerHTML = data.death;
+				deathIncrease.innerHTML = data.deathIncrease;
+				hospitalized.innerHTML = data.hospitalized;
+				recovered.innerHTML = data.recovered;
+				onVentilatorCurrently.innerHTML = data.onVentilatorCurrently;
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
