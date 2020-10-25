@@ -1,4 +1,4 @@
-function getStats(){
+function getState(){
     var stateCode = document.getElementById("stateCode");
     if (stateCode == 'us') {
         return "https://api.covidtracking.com/v1/" + stateCode + "/daily.json";
@@ -9,7 +9,7 @@ function getStats(){
 };
 
 function getStats(){
-    $.getJSON(getState(),function(data){
+    $.getJSON(getState();,function(data){
         let positive = data[0].positive;
         $(".positive").text("Number of Positive Cases:  " + positive);
         let negative = data[0].negative;
