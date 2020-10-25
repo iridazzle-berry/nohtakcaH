@@ -1,5 +1,5 @@
 function getState(){
-    var stateCode = document.getElementById("stateCode").defaultValue = 'us';
+    var stateCode = document.getElementById("stateCode");
     if (stateCode = 'us') {
         return "https://api.covidtracking.com/v1/" + stateCode + "/daily.json";
     }
