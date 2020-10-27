@@ -7,7 +7,7 @@ function getState(){
 	else {
 		statURL = "https://api.covidtracking.com/v1/states/" + stateCode + "/daily.json";
 	}
-	document.getElementById("statURL).innerText = statURL;
+	document.getElementById("statURL").innerText = statURL;
 	return statURL;
 };
 
