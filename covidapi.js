@@ -1,5 +1,5 @@
 function getState(){
-	var stateCode = document.getElementById("stateCode");
+	var stateCode = document.getElementById("stateCode").value;
 	var statURL;
 	if (stateCode == "us") {
 		statURL =  "https://api.covidtracking.com/v1/us/daily.json";
