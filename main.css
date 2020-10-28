@@ -67,3 +67,9 @@ p {
 	text-align: center;
 	align: center;
 }
+
+.red-button{
+	background-color: #A91000;
+	border: none;
+	outline: none;
+}
